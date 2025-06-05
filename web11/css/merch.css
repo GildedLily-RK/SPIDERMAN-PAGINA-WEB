@@ -33,6 +33,27 @@ body{
     font-size: 35px;
 }
 
+
+.colores{
+    color: #D30A17;
+    color: #0F4D92;
+    color: #FFFFFF;
+    color: #000000;
+
+    color: #E23642;
+    color: #FF3E8B;
+    color: #2A0B4F;
+    color: #00CC66;
+
+    color: #1A1A1A;
+    color: #8B0000;
+    color: #555555;
+    color: #F0F0F0;
+
+    color: #FFD700;
+    color: #FF8C00;
+}
+
 ul{
     margin: 0;
     padding: 0;
@@ -72,27 +93,7 @@ header a:hover{
     
 }
 
-.actual{
-    font-weight: bold;
-    border-bottom: 2px solid #E23642;
-}
-
-#botcom{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-#botcom:hover{
-    transform: scale(1.2);
-    transition: 0.5s;
-}
-
-.barrap{
-    width: 100%;
-    height: fit-content;
-    text-align: center;
+#combot{
     background-color: #1A1A1A;
     color: #F0F0F0;
     font-family: "Alegreya Sans SC", sans-serif;
@@ -100,48 +101,57 @@ header a:hover{
     font-style: normal;
 }
 
-
-#caja_pe{
-    width: 48%;
-    height: auto;
-    margin: 10px;
-    background-color: #630202;
-    padding: 10px;
-    float: left;
-    text-align: center;
-}
-
-.portada{
-    height: 315px;
-    display: inline-block;
-}
-
-.txtplic{
-    float: right;
-    align-items: center;
-    padding: 10px;
-}
-
-.tplic{
-    font-weight: bold;
-    color: #F0F0F0;
-    text-align: center;
-}
-
-.letraplic{
-    color: #F0F0F0;
-    text-align: justify;
-}
-
 .accordion-item{
-    background-color: #1A1A1A;
-    color: #F0F0F0;
+    color: #090b2b;
 }
 
-#soundcoll{
-    background-color: #1A1A1A;
-    color: #FFD700;
+.accordion-body{
+    background-color: #555555;
 }
+
+/*MENÚ DE PRODUCTOS*/
+#opccom{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#opccom.btn-group{
+    display: flex;
+    gap: 15px; 
+}
+
+#opccom .btn-secondary {
+  background-color: #05013a;
+  color: white;
+  border: none;
+}
+
+#opccom .btn-secondary:hover {
+  background-color: #E23642; 
+  color: white;
+}
+
+#opccom .btn-secondary:focus{
+  background-color: #E23642 !important;
+}
+
+/*CARDS DE LOS PRODUCTOS*/
+#prodsm{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card-body{
+    background-color: #FF8C00;
+    text-align: center;
+}
+
+.card{
+    border-color: #0F4D92;
+}
+
 
 footer{
     align-items: center;
@@ -164,19 +174,16 @@ footer{
 }
 
 .fa-brands:hover{
-    color: #D30A17;
+    color: #E23642;
 }
 
 /*DISEÑO RESPONSIVO*/
 /*PARA TABLET*/
 @media (max-width: 1000px) {
-    .trailer{
-        width: 90%;
-        height: auto;
-    }
-
-    #caja_pe{
-        width: 45%;
+    #opccom{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     }
 }
 
@@ -188,12 +195,9 @@ footer{
     align-items: center;
     }
 
-    .trailer{
-        width: 90%;
-        height: auto;
-    }
-
-    #caja_pe{
-    width: 100%;
+    #prodsm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
 }
