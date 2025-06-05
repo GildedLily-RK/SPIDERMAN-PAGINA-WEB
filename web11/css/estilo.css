@@ -1,0 +1,301 @@
+body{
+    font-optical-sizing: auto;
+    padding: 0;
+    margin: 0;
+    background-color: #8B0000;
+
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contenedor{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    height: auto;
+    
+}
+
+.logo{
+    float: left;
+    width: 100px;
+    height: 110px;
+}
+
+.titulo{
+    float: left;
+    margin-top: 10px;
+    color: #FFD700;
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.colores{
+    color: #D30A17;
+    color: #0F4D92;
+    color: #FFFFFF;
+    color: #000000;
+
+    color: #E23642;
+    color: #FF3E8B;
+    color: #2A0B4F;
+    color: #00CC66;
+
+    color: #1A1A1A;
+    color: #8B0000;
+    color: #555555;
+    color: #F0F0F0;
+
+    color: #FFD700;
+    color: #FF8C00;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #0a0a0a;
+    padding-top: 30px;
+    min-height: 70px;
+    text-transform: uppercase;
+    background-image: url(../imgsyp/topography/topography.svg);
+}
+
+header a{
+    color: #E23642;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header a:hover{
+    color: rgb(204, 40, 40);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(204, 40, 40);
+    transition: 0.1s;
+    
+}
+
+.actual{
+    font-weight: bold;
+    border-bottom: 2px solid #E23642;
+}
+
+header img{
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 20px;
+}
+#cabecera{
+    min-height: 400px;
+    background: linear-gradient(rgba(182, 19, 19, 0.404),rgba(192, 19, 19, 0.404)),
+    url('../img/headerSpider.jpeg') ;
+    width: 98%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    
+    
+}
+
+#cabecera h1{
+    margin-top: 100px;
+    font-size: 55px;
+    text-transform: uppercase;
+    color: #172a3f;
+    text-align: center;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+#cabecera p{
+    font-size: 20px;
+    
+    text-align: center;
+    padding: 0 250px;
+    color: #FFD700;
+    font-weight: bold;
+    font-family: "Fontdiner Swanky", serif;
+  font-weight: 400;
+  font-style: normal;
+  height: auto;
+    
+    
+    
+}
+
+main {
+    
+    grid-area: main;
+    
+    width: 100%;
+   
+    padding: 32px;
+    height: auto;
+    display: flex;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+aside {
+    background: #FFD700;
+    padding: 40px;
+    color: white;
+    width: 40%;
+    display: block;
+    height: 600px;
+    margin-left: 5px;
+    float: right;
+}
+
+
+section {
+    background: linear-gradient(#aa1717, black);
+    padding: 10px;
+    margin-left: 10px;    
+    height: 20cm;
+    margin-right: 40px;
+}
+
+aside iframe {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.section1{      
+    
+    padding: 20px;
+    margin-bottom: 10px;
+    height: 150px;
+    text-align: center;
+    background-color: #172a3f;
+}
+
+article {
+    background: #172a3f;
+    color: white;
+    padding: 20px 30px 0 0;
+    margin-bottom: 10px;
+    text-align: center;
+    height: 220px;
+      
+}
+
+footer{
+    align-items: center;
+    background-color: #0a0a0a;
+    padding-top: 30px;
+    height: 120px;
+    background-image: url(../imgsyp/topography/topography.svg);
+}
+
+.letfoot{
+    color: #FFD700;
+    text-align: center;
+}
+
+.fa-brands{
+    padding: 10px;
+    border: 10px;
+    float: right;
+    height: 50px;
+}
+
+.fa-brands:hover{
+    color: #D30A17;
+}
+
+@media(max-width: 768px){
+    header nav,
+    header nav li,
+    article, .section1, main,
+    .contenedor{
+        background-position: 50%;
+        float: none;
+        width: 100%;
+        text-align: center;
+        display: block;
+        height: auto;
+    }
+    .logo {
+        height: 40px;
+    }
+    aside{
+        padding-top: 300px;
+        background-position: 50%;
+        float: none;
+        width: 100%;
+        text-align: center;
+        display: block;
+        height: auto;
+        background-color: transparent;
+    }
+
+    aside iframe, aside{
+        margin-top: 90px;
+        padding-top: 20px;
+        background-color: #FFD700;
+    }
+    #cabecera p{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        height: auto;
+        padding: 0 20px;
+    }
+    .titulo {
+        font-size: 1.3rem;
+    }
+
+    #cabecera {
+        padding: 20px 10px;
+    }
+    #cabecera p {
+        width: 100%;;
+    }
+
+    
+    main{
+        width: 100%;
+    }
+    footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    }
+
+    
+}
+
+@media(max-width: 578px){
+    aside iframe, aside{
+        margin-top: 250px;
+        padding-top: -10px;
+        background-color: #FFD700;
+        height: auto;
+    }
+
+}
