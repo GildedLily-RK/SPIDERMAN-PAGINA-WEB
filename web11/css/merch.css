@@ -11,6 +11,11 @@ body{
     flex-direction: column;
 }
 
+#linea{
+    border: #555555 4px solid;
+    width: 100%;
+}
+
 .contenedor{
     width: 95%;
     margin: auto;
@@ -31,27 +36,6 @@ body{
     font-weight: 400;
     font-style: normal;
     font-size: 35px;
-}
-
-
-.colores{
-    color: #D30A17;
-    color: #0F4D92;
-    color: #FFFFFF;
-    color: #000000;
-
-    color: #E23642;
-    color: #FF3E8B;
-    color: #2A0B4F;
-    color: #00CC66;
-
-    color: #1A1A1A;
-    color: #8B0000;
-    color: #555555;
-    color: #F0F0F0;
-
-    color: #FFD700;
-    color: #FF8C00;
 }
 
 ul{

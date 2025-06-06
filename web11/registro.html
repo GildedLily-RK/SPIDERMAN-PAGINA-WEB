@@ -1,37 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title>Spider-Man</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="imgsyp/cabezaspiderman2.png">
+  <title>Crimson Webzone | Registro</title>
+  <link rel="stylesheet" href="css/estform.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9407de92b2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="contenedor">
-            <div id="marca">
-                <h1>Spider-Man</h1>
-            </div>
+            <img class="logo" src="imgsyp/cabezaspiderman.png" alt="">
+            <h1 class="titulo">Crimson Webzone</h1>
             <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="noticias.html">Noticias</a></li>
-                    <li><a href="series.html">Series</a></li>
-                    <li><a href="peliculas.html">Peliculas</a></li>
-                    <li class="actual"><a href="registro.html">Registrate</a></li>
+                <ul class="menu">
+                    <li id="men_op"><a href="index.html">Inicio</a></li>
+                    <li id="men_op"><a href="noticias.html">Noticias</a></li>
+                    <li id="men_op"><a href="series.html">Series</a></li>
+                    <li id="men_op"><a href="peliculas.html">Películas</a></li>
+                    <li id="men_op" class="actual"><a href="registro.html">Registrate</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section>
-        <div>
-            <h1 style="color: rgb(255, 0, 76);">Registrate</h1>
-        </div>
-    </section>
+    <div id="linea"></div>
+
+    <!--BOTÓN DE COMPRAS
+    <div id="botcom" class="d-grid gap-2 col-6 mx-auto">
+        <a href="compra.html"><button class="btn btn-warning" type="button"><i class="fa-solid fa-bag-shopping"></i>¡Compra nuestros productos!</button></a> 
+    </div>
+    -->
     
+    <div id="headerform">
+        <h1>Encuestas Spider-Man 🕷️</h1>
+        <nav class="nav">
+            <button onclick="mostrarSeccion('registro')">📝 Registro</button>
+            <button onclick="mostrarSeccion('encuesta')">📋 Encuesta</button>
+            <button onclick="mostrarSeccion('comentarios')">💬 Comentarios</button>
+            <button onclick="mostrarSeccion('alertas')">🚨 Alertas</button>
+        </nav>
+    </div>
+
+
+  <main>
+    <section id="registro" class="seccion active">
+      <h2>Registrate para recibir noticias y comentarios sobre spiderman</h2>
+      <form id="formRegistro" class="card">
+        <input type="text" id="nombre" placeholder="Tu nombre" required />
+        <input type="email" id="correo" placeholder="Correo electrónico" required />
+        <button type="submit">Registrarse</button>
+      </form>
+    </section>
+
+    <section id="encuesta" class="seccion">
+      <h2>¿Quién es tu Spider-Man favorito?</h2>
+      <form id="formEncuesta" class="card">
+  <select id="spidermanFav" required>
+    <option value=""> Elige un Spider-Man </option>
+    <option value="Tobey Maguire">Tobey Maguire</option>
+    <option value="Andrew Garfield">Andrew Garfield</option>
+    <option value="Tom Holland">Tom Holland</option>
+  </select>
+
+  <textarea id="comentarioSpidey" placeholder="¿Por qué?" required></textarea>
+
+  <div class="star-rating">
+    <input type="radio" id="star5" name="rating" value="5" /><label for="star5">5★</label>
+    <input type="radio" id="star4" name="rating" value="4" /><label for="star4">4★</label>
+    <input type="radio" id="star3" name="rating" value="3" /><label for="star3">3★</label>
+    <input type="radio" id="star2" name="rating" value="2" /><label for="star2">2★</label>
+    <input type="radio" id="star1" name="rating" value="1" /><label for="star1">1★</label>
+  </div>
+
+  <textarea id="comentarioGeneral" placeholder="Comentario general..." required></textarea>
+
+  <button type="submit">Enviar Todo</button>
+</form>
+    </section>
+
+    <section id="comentarios" class="seccion">
+      <h2>Comentarios</h2>
+      <ul id="listaComentarios" class="card"></ul>
+    </section>
+
+    <section id="alertas" class="seccion">
+      <h2>Últimas alertas</h2>
+      <button onclick="mostrarAlerta()">Mostrar alerta</button>
+      <div id="mensajeAlerta" class="alerta"></div>
+    </section>
+  </main>
+  <script src="js/form.js"></script>
+
+  <div id="linea"></div>
+
+  <footer>
+        <p class="letfoot">© 2025 Crimson Webzone - No afiliado a Marvel</p>
+        <a href="https://www.facebook.com/SpiderManMovie/?locale=es_LA"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@spidermanmovie?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/spidermanmovie/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/spiderman?lang=es"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.twitch.tv/directory/category/marvels-spider-man?lang=es"><i class="fa-brands fa-twitch"></i></a>
+    </footer>
 </body>
 </html>
