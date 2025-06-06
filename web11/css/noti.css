@@ -1,0 +1,368 @@
+body{
+    font-optical-sizing: auto;
+    padding: 0;
+    margin: 0;
+    background-color: #8B0000;
+    height: 100%;
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo{
+    float: left;
+    width: 100px;
+    height: 110px;
+}
+
+.titulo{
+    float: left;
+    margin-top: 10px;
+    color: #FFD700;
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #0a0a0a;
+    padding-top: 30px;
+    min-height: 70px;
+    text-transform: uppercase;
+    background-image: url(../imgsyp/topography/topography.svg);
+}
+
+header a{
+    color: #E23642;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header a:hover{
+    color: rgb(204, 40, 40);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(204, 40, 40);
+    transition: 0.1s;
+    
+}
+
+.actual{
+    font-weight: bold;
+    border-bottom: 2px solid #E23642;
+}
+
+#botcom{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#botcom:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+/* FORMATO PERIODICO*/
+a{
+    text-decoration: none;
+    color: #0a0a0a;
+}
+
+#periodico{
+    background-image: url(../imgnot/fondotextp.jpg);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headnot{
+    gap: 10px;
+    border: 10px;
+    padding: 10px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cuadrito-not{
+    border: 3px solid #0a0a0a;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.cuadrito-not p{
+    color: #0a0a0a;
+    font-size: 30px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.cuadrito-not p:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+.nottitulo{
+    text-align: center;
+    font-size: 100px;
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #F0F0F0;
+    width: 95%;
+    background-color: #D30A17;
+}
+
+.fa-spider:hover{
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.wanted{
+    text-align: center;
+    width: 95%;
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 82px;
+}
+
+.wantedimg{
+    width: 90%;
+    height: auto;
+}
+
+.pie-not{
+    width: 95%;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    background-color: #D30A17;
+    color: #F0F0F0;
+    border: 10px;
+}
+
+#linea{
+    border: #555555 4px solid;
+    width: 100%;
+}
+
+#caja-not{
+    padding: 10px;
+    background-image: url(../imgnot/cajafondo5.jpg);
+    width: 95%;
+    height: fit-content;
+}
+
+#noticia{
+    border: #0a0a0a 3px solid;
+    width: 95%;
+    padding: 10px;
+}
+
+/*NOTICIA 2*/
+.not-div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.not-ttl{
+    font-weight: bold;
+    border-bottom: #D30A17 1px solid;
+}
+
+.not-img{
+    height: auto;
+    width: 200px;
+}
+
+article{
+    text-align: justify;
+}
+
+/*NOTICIA 3*/
+.not-div2{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+}
+
+.not-img2{
+    height: auto;
+    width: 450px;
+}
+
+.noti2-caja{
+    color: #F0F0F0;
+    background-color: #0a0a0a;
+    padding: 15px;
+}
+
+.noti2-caja article p{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.noti2-caja h3{
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+}
+
+.noti3-caja{
+    border-top: #0a0a0a 3px solid;
+    padding: 15px;
+}
+
+.noti3-caja article p{
+    font-size: 20px;
+}
+
+.noti3-caja h3{
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+/*FOOTER*/
+footer{
+    align-items: center;
+    background-color: #0a0a0a;
+    padding-top: 30px;
+    height: 120px;
+    background-image: url(../imgsyp/topography/topography.svg);
+}
+
+.letfoot{
+    color: #FFD700;
+    text-align: center;
+}
+
+.fa-brands{
+    padding: 10px;
+    border: 10px;
+    float: right;
+    height: 50px;
+    color: #0F4D92;
+}
+
+.fa-brands:hover{
+    color: #D30A17;
+}
+
+/*DISEÑO RESPONSIVO*/
+/*PARA TABLET*/
+@media (max-width: 1000px) {
+    .contenedor{
+        background-position: 50%;
+        width: 100%;
+        text-align: center;
+        display: block;
+        height: auto;
+    }
+
+    .not-div{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .not-div2{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .not-img2{
+    width: 380px;
+    }
+
+    .noti2-caja{
+        width: 100%;
+    }
+
+    .noti2-caja article p{
+    font-size: 25px;
+    }
+
+    .noti2-caja h3{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .noti3-caja{
+        border-top: #0a0a0a 3px solid;
+        padding: 15px;
+    }
+
+    .noti3-caja h3{
+        text-align: center;
+        font-family: "Bowlby One SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+    }
+
+    .noti3-caja article p{
+        font-size: 18px;
+    }
+
+}
+
+/*PARA CELULAR*/
+@media (max-width: 600px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headnot{
+        flex-direction: column;
+    }
+
+    .cuadrito-not{
+        width: 100%;
+    }
+
+    .wanted{
+    font-size: 60px;
+    }
+}
